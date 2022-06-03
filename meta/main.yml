@@ -1,0 +1,10 @@
+galaxy_info:
+  author: mbelavic@srce.hr
+  description: Install ec3-fix cluster
+  company:  Srce
+  license: Apache
+  min_ansible_version: 2.0
+  platforms:
+  - name: RedHat
+    versions:
+    - trusty
