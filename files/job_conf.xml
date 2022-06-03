@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<job_conf>
+    <plugins workers="5">
+        <plugin id="sge" type="runner" load="galaxy.jobs.runners.drmaa:DRMAAJobRunner">
+         <param id="drmaa_library_path">/opt/sge/lib/lx-amd64/libdrmaa.so</param>
+        </plugin>
+    </plugins>
+    <handlers>
+          <handler id="main"/>
+    </handlers>
+    <destinations>
+        <destination id="sge_runner" runner="sge"/>
+         <param id="nativeSpecification">-j</param>
+         <param id="embed_metadata_in_job">False</param>
+         <env file="/srv/galaxy/venv/bin/activate"/>
+    </destinations>
+</job_conf>
