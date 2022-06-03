@@ -1,0 +1,20 @@
+---
+- name: install centos-release-scl
+  yum:
+    name: centos-release-scl
+    state: latest
+    
+- name: install scl-utils
+  yum:
+    name: scl-utils
+    state: latest
+    
+- name: install scl-utils-build
+  yum:
+    name: scl-utils-build
+    state: latest
+ 
+ - name: install rh-python38-python
+  yum:
+    name: rh-python38-python
+    state: latest
