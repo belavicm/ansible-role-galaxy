@@ -14,7 +14,7 @@
     name: scl-utils-build
     state: latest
  
- - name: install rh-python38-python
+- name: install rh-python38-python
   yum:
     name: rh-python38-python
     state: latest
