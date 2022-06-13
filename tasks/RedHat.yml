@@ -18,3 +18,18 @@
   yum:
     name: rh-python38-python
     state: latest
+    
+- name: install rh-python38-python-pip
+  yum:
+    name: rh-python38-python-pip
+    state: latest    
+
+- name: Install ansible
+  pip:
+    name: ansible
+    executable: /opt/rh/rh-python38/root/usr/bin/pip
+    
+- name: Install wheel
+  pip:
+    name: wheel
+    executable: /opt/rh/rh-python38/root/usr/bin/pip
